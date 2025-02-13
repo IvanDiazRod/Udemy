@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flotantes en CSS</title>
+    <style>
+        body {
+            height: 100%;
+            font-family: arial;
+            font-size: 1.125rem;
+        }
+        section article img {
+            width: 30%;
+            height: auto;
+            float: left;
+            margin: 0.3em 0.9em 0.3em 0;
+        }
+        section footer {
+            width: 95%;
+            height: auto;
+            font-size: 0.95rem;
+            margin-top: 2em;
+            padding: 0.2em 1em 2em;
+            border: 1px solid black;
+            clear: both;
+        }
+        /* Crear contenido en columnas */
+        .caja {
+            width: 33.33%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos flotantes</h1>
+    <section>
+        <article>
+            <img src="./img/perro_adf93861_1412331876_230825124420_800x800.jpg" alt="Perro sanche">
+            <h2>Como adiestrar a tu perro</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ab. Rerum, accusamus odit placeat reiciendis totam optio maxime impedit! Placeat obcaecati vero ab commodi, tenetur quibusdam sit temporibus soluta aliquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem necessitatibus odio ipsa, totam molestias aliquam a impedit nisi sunt ducimus iure commodi itaque animi ex tempore. Quae, hic eveniet.</p>
+            <a href="#">Leer más</a>
+        </article>
+        <footer>
+            <h3>Etiquetas:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </footer>
+    </section>
+    <h2>Contenido en columnas</h2>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe unde excepturi iure magni minus. Eos, minima? Natus, possimus corrupti? Veniam, assumenda incidunt illo reprehenderit voluptatibus accusamus fugit delectus optio saepe.</p>
+        <a href="#">Leer más</a>
+    </div>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil mollitia, error iure alias libero dicta vero, voluptas est, velit adipisci deserunt culpa reiciendis sit! Ex cum inventore a rem?</p>
+        <a href="#">Leer más</a>
+    </div>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam distinctio assumenda dolore nisi id esse deserunt quam eligendi magni! Quibusdam omnis totam obcaecati repellat magnam sed praesentium dignissimos quaerat tenetur.</p>
+        <a href="#">Leer más</a>
+    </div>
+</body>
+</html>

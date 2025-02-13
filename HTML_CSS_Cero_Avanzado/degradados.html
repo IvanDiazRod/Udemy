@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como aplicar sombras en CSS</title>
+    <style>
+        body {
+            height: 100%;
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        /* Degradado lineal */
+        #efecto-lineal {
+            width: 100%;
+            height: 260px;
+            background-color: #008000;
+            margin-bottom: 8px;
+            background-image: linear-gradient(to right bottom, #008000 30%, #000, #0000ff);
+        }
+        #efecto-lineal-angular {
+            width: 100%;
+            height: 230px;
+            background-color: #ff0000;
+            margin-bottom: 12px;
+            background-image: linear-gradient(-50deg, #ff0000, #ffff00);
+        }
+        #efecto-radial {
+            width: 100%;
+            height: 250px;
+            background-color: yellow;
+            background-image: radial-gradient(farthest-corner circle at center, #ffff00 50%, #000);
+        }
+        /* Gradiantes recursivos */
+        #recursivo-lineal {
+            width: 100%;
+            height: 250px;
+            background-color: #1a87f7;
+            margin-bottom: 12px;
+            background-image: repeating-linear-gradient(90deg, #1a87f7, #000 80px);
+            background-image: -o-repeating-linear-gradient(left, #1a87f7, #000 80px);
+        }
+        #recursivo-radial {
+            width: 100%;
+            height: 250px;
+            background-color: #adff2f;
+            margin-bottom: 12px;
+            background-image: repeating-linear-gradient(closest-side at 150px 25px, #adff2f 15%, #ffff00 40%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Efecto lineal y radial</h1>
+    <h1>Colores degradados</h1>
+    <h2>Efecto lineal</h2>
+    <div id="efecto-lineal">
+
+    </div>
+    <h2>Unidades angulares</h2>
+
+    <div id="efecto-lineal-angular">
+
+    </div>
+
+    <h2>Degradados circulares</h2>
+    <div id="efecto-radial"></div>
+
+    <h2>Degradados recursivos</h2>
+    <div id="recursivo-lineal"></div>
+    <div id="recursivo-radial"></div>
+</body>
+</html>

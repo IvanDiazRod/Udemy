@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones CSS</title>
+        <style>
+            body {
+                height: 100%;
+                font-family: arial, sans-serif;
+                font-size: 1.125rem;
+            }
+            /* Como aplica estilos a los enlaces */
+            a {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                display: block;
+            }
+            #enlace-estilos {
+                text-decoration: none;
+                font-weight: bold;
+                color: green;
+            }
+            #enlace-estilos:visited {
+                color: orange;
+            }
+            #enlace-estilos:hover {
+                text-decoration: underline;
+            }
+            #enlace-estilos:active {
+                color: red;
+            }
+            /* Como crear enlaces tipo botón */
+            a[type="button"] {
+                background-color: #008000;
+                display: block;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+                font-weight: bold;
+                border: 1ps solid black;
+                padding: 10px 25px;
+                border-radius: 5px;
+                width: 250px;
+            }
+            a[type="button"]:hover {
+                background-color: #1100ff;
+                font-weight: 100;
+            }
+            a[type="button"]:active {
+                background-color: #012e12;
+            }
+        </style>
+<body>
+    <h1>Como aplicar estilos a los enlaces</h1>
+    <a href="#">Enlace con estilos por defecto</a>
+    <a id="enlace-estilos" href="#">Enlace con estilos personalizados</a>
+    <a type="button" href="#">Enlace tipo botón</a>
+</body>
+</html>

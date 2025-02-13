@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como aplicar estilos a los botones</title>
+        <style>
+            body {
+                height: 100%;
+                font-family: arial, sans-serif;
+                font-size: 1.125rem;
+            }
+            .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+            vertical-align: middle;
+            color: red;
+            font-size: 1.35rem;
+            }
+            /* Modificar el estilo de los botones */
+            .btn {
+                border: none;
+                margin-left: 5px;
+                display: inline-block;
+                padding: 20px 25px;
+                font-size: 1.10rem;
+                color: #fff;
+                text-align: center;
+            }
+            .estilo1 {
+                background-color: #ffff00;
+                border-radius: 8px;
+                border: 1px solid black;
+                color: #000;
+            }
+            .estilo2 {
+                background-color: #0000ff;
+                background-image: linear-gradient(to top right, blue 12px, #000 150px);
+            }
+            .estilo3 {
+                background-color: #008000;
+                color: #fff;
+            }
+            .estilo4 {
+                background-color: #ff0000;
+                box-shadow: 4px 4px 8px #333;
+            }
+            .estilo3:hover {
+                border: 1px solid #008000;
+                background-color: transparent;
+                color: #000;
+            }
+            .estilo5 {
+                background-color: #008cba;
+                margin: 20px 0;
+                width: 100%;
+            }
+            /* Como craer un grupo de botones */
+            #grupobtn .boton {
+                background-color: green;
+                border: 1px solid green;
+                color: white;
+                padding: 20px 30px;
+                text-align: center;
+                display: block;
+                font-size: 1.1rem;
+            }
+            #grupobtn .boton:hover  {
+                background-color: #3e8e81;
+            }
+        </style>
+<body>
+    <h1>Como aplicar estilos a botones con CSS</h1>
+    <h2>Botones basicos</h2>
+    <button class="btn estilo1">    <span class="material-symbols-outlined">
+        download
+        Botón</span></button>
+    <input class="btn estilo2" type="button" value="Botón">
+    <input class="btn estilo3" type="submit" value="enviar">
+    <input class="btn estilo4" type="reset" value="resetear">
+    <input class="btn estilo5" type="button" value="Botón">
+    <h2>Grupo de botones</h2>
+    <div id="grupobtn">
+        <button class="boton">Botón</button>
+        <button class="boton">Botón</button>
+        <button class="boton">Botón</button>
+        <button class="boton">Botón</button>
+    </div>
+    <div>
+    <span class="material-symbols-outlined">
+        download
+        </span>
+    </div>
+</body>
+</html>

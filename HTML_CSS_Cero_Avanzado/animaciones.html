@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones CSS</title>
+        <style>
+            body {
+                height: 100%;
+                font-family: arial, sans-serif;
+                font-size: 1.125rem;
+            }
+            /* Como crear animacion de elementos */
+            h2 {
+                margin-top: 15rem;
+                font-size: 3rem;
+                animation-name: efecto-rebote;
+                animation-duration: 1s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes efecto-rebote {
+                0% {
+                    transform: translatey(50px);
+                }
+                50% {
+                    color: black;
+                }
+                100% {
+                    transform: translatey(-200px);
+                    transform: skewy(1.5);
+                    color: red;
+                }
+            }
+            /* Como crear un spinner basico */
+            #elemento {
+                width: 200px;
+                height: 200px;
+                border: 5px double orangered;
+                margin: 0 auto 90px;
+                animation: spinner 2s 1s ease-in-out infinite alternate-reverse;
+            }
+            @keyframes spinner {
+                0% {
+                    transform: rotate(0deg);
+                }
+                30% {
+                    transform: rotatex(180deg);
+                    border: 1px solid orangered;
+                }
+                80% {
+                    transform: rotatey(180deg);
+                }
+                100% {
+                    transform: rotatez(360deg);
+                    background-color: orangered;
+                }
+            }
+            /* Como crear multiples animaciones en un mismo elemento */
+            #animacion-multiple {
+                background-color: gold;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                margin-bottom: 300px;
+                animation: cambio 3s ease infinite alternate, mover 2s ease-in-out infinite alternate-reverse;
+            }
+            @keyframes cambio {
+                0%, 100% {background-color: gold;}
+                86% {background-color: green;}
+            }
+            @keyframes mover {
+                0% {transform: translateX(900px)};
+            }
+        </style>
+<body>
+    <h1>Como crear animaciones basicas</h1>
+    <h2>Este texto rebota</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, impedit ipsum eius obcaecati recusandae quibusdam ex maiores vero provident sequi vitae veniam debitis eligendi tempore, animi a itaque. Pariatur, culpa?m</p>
+    <div id="animacion-multiple"></div>
+
+    <div id="elemento"></div>
+</body>
+</html>
