@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-seectores</title>
+    <style>
+        /* Pseudoclases a enlaces */
+        a {
+            text-decoration: none;
+        }
+        a:link {
+            color: orange;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            font-size: 25px;
+        }
+        a:active {
+            color: blueviolet;
+        }
+        /* A cualquier elemento */
+        button:hover {
+            color: red;
+        }
+        button:active {
+            color: purple;
+        }
+        /* Pseudoclases a formularios */
+        input:enabled {
+            background-color: lightyellow;
+        }
+        input:focus {
+            background-color: yellow;
+        }
+        input:disabled {
+            cursor: not-allowed;
+            background-color: darkgray; 
+        }
+        input[type="email"]:invalid {
+            border: 3px solid red;
+        }
+        input[type="radio"]:checked + label {
+            background-color: blue;
+            color: white;
+        }
+        input[type="checkbox"]:checked + label {
+            color: red;
+        }
+        /* Pseudoclases segun la posicion */
+        #posicionelemento p:first-child {
+            color: darkred;
+        }
+        #posicionelemento p:nth-child(2) {
+            color: darkblue;
+        }
+        #posicionelemento p:nth-child(3) {
+            color: darkorange;
+        }
+        #posicionelemento p:last-child {
+            color: darkgreen;
+        }
+        ul li:nth-child(even) {
+            color: green;
+        }
+        ul li:nth-child(odd) {
+            color: blue;
+        }
+        /* nth-child */
+        ol li:nth-child(-n +5) {
+            background-color: yellow;
+        }
+        /* pseudoclase not */
+        #negacion p:not(:nth-child(2)) {
+            color: red;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Enlace con estilos</a>
+    <br>
+    <button>Click aquí</button>
+    <h2>Pseudclases orientadas a formularios</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" size="50">
+        <br>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" size="50" disabled>
+        <br>
+        <br>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" size="50">
+        <br>
+        <br>
+        Genero:
+        <br>
+        <input type="radio" name="genero" id="hombre" value="masculino">
+        <label for="hombre">Masculino</label>
+        <br>
+        <input type="radio" name="genero" id="mujer" value="femenino">
+        <label for="mujer">Femenino</label>
+        <br>
+        <br>
+        Pasatiempo:
+        <br>
+        <input type="checkbox" name="pasatiempo1" id="hiking" value="excursionismo">
+        <label for="hiking">Excursionismo</label>
+        <br>
+        <input type="checkbox" name="pasatiempo2" id="swimming" value="natacion">
+        <label for="swimming">Natación</label>
+    </form>
+    <h2>Pseudoclases basadas en la posicion</h2>
+    <div id="posicionelemento">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, labore cupiditate? Possimus corporis iste illum asperiores repellat corrupti quisquam. Maxime ut tempore obcaecati molestias assumenda explicabo aspernatur voluptatem praesentium id?</p>
+        <p>Quaerat necessitatibus, eius molestias alias nihil accusantium ut animi hic. Accusantium nobis eligendi adipisci voluptate ipsa aut magnam tempora vel debitis voluptatibus, incidunt repudiandae iusto quisquam facere reprehenderit nostrum? Possimus.</p>
+        <p>Quas neque, quia mollitia dolore obcaecati doloremque ipsa aut sed molestias eligendi delectus maiores, quisquam accusantium officiis, porro velit sapiente voluptate quos impedit incidunt natus vero eaque hic reprehenderit! Suscipit.</p>
+        <p>At, quisquam ipsum eveniet ipsam dolorem quidem consectetur quibusdam eum sapiente, pariatur dignissimos? Est velit aliquid quos unde pariatur officiis laboriosam delectus aspernatur? Esse perferendis inventore deleniti ipsa magni optio?</p>
+    </div>
+    <ul>
+        <li>Manzanas</li>
+        <li>Uvas</li>
+        <li>Peras</li>
+        <li>Fresas</li>
+        <li>Moras</li>
+    </ul>
+    <h2>Pseudoclase nth:child (an+b)</h2>
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+        <li>Quinto</li>
+        <li>Sexto</li>
+        <li>Septimo</li>
+        <li>Octavo</li>
+        <li>Noveno</li>
+        <li>Decimo</li>
+    </ol>
+    <h2>Pseudoclase not</h2>
+    <div id="negacion">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo praesentium quasi molestias magni? Illum assumenda obcaecati rerum nihil, dolores eligendi iusto nostrum, aspernatur facere veniam repellendus unde voluptatum impedit. Mollitia.</p>
+        <p>Suscipit corporis consequuntur, iste incidunt beatae est, dignissimos explicabo esse cumque quis eius quia. Minus, nulla consequatur vero officia temporibus autem nobis illo consectetur eius deleniti odit itaque, fugit necessitatibus.</p>
+        <p>Modi optio unde iusto dicta corporis quisquam libero magnam, ratione natus fugiat eveniet eaque consequatur a iste quas rem eligendi exercitationem blanditiis expedita ipsam soluta voluptatem suscipit. Quod, sapiente molestiae!</p>
+    </div>
+</body>
+</html>

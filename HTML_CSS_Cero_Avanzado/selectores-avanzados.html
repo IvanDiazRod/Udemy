@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores avanzados CSS</title>
+    <style>
+        /* Selector universal */
+        /* Selector multiple */
+        h2, #intro {
+            font-size: 25px;
+        }
+        /* Selector descendiente */
+        div p {
+            background-color: blue;
+            color: white;
+        }
+        /* Selector de hojos */
+        ol > li {
+            color: red;
+        }
+        /* Selector adyacente */
+        div + p {
+            background-color: seagreen;
+        }
+        /* Selector hermano general */
+        div ~ p {
+            font-size: 25px;
+        }
+        /* Selector de atributos [atr] */
+        a[target] {
+            color: green;
+        }
+        /* Selector de atributos [atr="valor"] */
+        a[target="_self"] {
+            color: red;
+        }
+        /* Selector de atributos [atr&="valor"] */
+        p[class^="destacado"] {
+            background-color: yellow;
+        }
+        /* Selector de atributos [atr$="valor"] */
+        a[href$=".es"] {
+            color: darkred;
+        }
+        /* Selector de atributos [atr*="valor"] */
+        li[title*="cur"] {
+            font-size: 22px;
+        }
+        /* Selector de atributos [atr~="valor"] */
+        p[class~="destacado"] {
+            color: blue;
+        }
+        /* Selector de atributos [atr|="valor"] */
+        p[class|="texto"] {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Esto es un encabezado de nivel 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem reiciendis, quasi ad quis facere voluptatum earum, nulla ullam alias dolorem illo beatae modi dolores rerum, laudantium est ex adipisci?</p>
+    <a href="#">Leer más...</a>
+    <h2>Esto es un encabezado de nivel 2</h2>
+    <p id="intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In numquam est sint quas aspernatur modi unde doloribus similique inventore quaerat harum aperiam a ex iusto tempora rerum, aliquam eligendi voluptatibus!</p>
+    
+    <div>
+        <h2>Esto es otro encabezado de nivel 2</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque odio cum sunt, asperiores impedit perferendis. Quisquam ipsam repellendus ipsa reprehenderit eius mollitia, ad sit officia neque amet dolores, praesentium atque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt earum ratione distinctio, harum corrupti et fuga, natus blanditiis eum, fugit quidem ex aliquid cupiditate ea assumenda accusantium maxime ut possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim totam cumque pariatur aut corrupti consequatur molestiae iure! Recusandae ad aliquid aliquam est esse voluptatem dignissimos expedita natus voluptatum laboriosam.</p>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, delectus quisquam officia alias, voluptatibus blanditiis nobis nulla saepe, voluptas dolore voluptatum? Cum quod mollitia laudantium facilis quia voluptas dicta tempore?</p>
+    <p class="textodestacado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla dignissimos sit voluptatem earum minima nihil dolor ipsa illum delectus, ea voluptas rem eum ex. Neque, quae. Natus, animi corrupti.</p>
+    <ol>
+        <li>Vegetales</li>
+        <li>Frutas</li>
+        <ul>
+            <li>Manzanas</li>
+            <li>Uvas</li>
+            <li>Fresas</li>
+        </ul>
+        <li>Verduras</li>
+    </ol>
+    <br>
+    <a href="#">Enlace1</a>
+    <br>
+    <a href="#" target="_blank">Enlace2</a>
+    <br>
+    <a href="#" target="_self">Enlace3</a>
+    <br>
+    <p class="destacado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos rerum itaque labore illum minus ex beatae explicabo deleniti, deserunt quasi officiis ipsum quaerat nulla repudiandae debitis autem assumenda rem.</p>
+    <p class="especial destacado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatum quos voluptates suscipit, et accusantium modi eius molestiae voluptatibus voluptate optio eos dicta omnis reprehenderit. Reiciendis nam itaque corporis id.</p>
+    <p class="destacado principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, distinctio debitis rem non veniam recusandae quasi, omnis quia quas nam sequi eveniet doloremque impedit corporis. Mollitia doloremque aspernatur vel tempore.</p>
+    <p class="texto-destacado principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores molestias omnis eos impedit, consequuntur commodi, dolore exercitationem fugit, quo culpa. Repellendus laborum possimus, architecto numquam quas omnis et libero.</p>
+    <br>
+    <a href="https://google.com">Google</a>
+    <br>
+    <a href="https://yahoo.com">Yahoo</a>
+    <br>
+    <a href="https://google.es">Google</a>
+    <br>
+    <a href="https://yahoo.es">Yahoo</a>
+    <br>
+    <ul>
+        <li title="curso php">Curso de php</li>
+        <li title="nuevo curso de c++">Curso de c++</li>
+        <li title="cursos javascript">Cursos de javascript</li>
+        <li title="Aprende html">Aprende html</li>
+    </ul>
+</body>
+</html>

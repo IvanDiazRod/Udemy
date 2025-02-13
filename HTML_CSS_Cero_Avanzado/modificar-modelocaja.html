@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar el modelo de cajas CSS</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            height: 100%;
+            font-family: arial;
+            font-size: 1.125rem;
+        }
+        /* Crear contenido en columnas */
+        .caja {
+            width: 481px;
+            float: left;
+            margin: 0px 10px;
+            border: 1px solid black;
+            padding: 5px 12px;
+        }
+        .caja img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como modificar el modelo de cajas tradicional</h1>
+    <h2>Contenido en columnas</h2>
+    <div class="caja">
+        <img src="./img/perro_adf93861_1412331876_230825124420_800x800.jpg" alt="Perro sanche">
+        <h2>Como adiestrar a tu perro</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe unde excepturi iure magni minus. Eos, minima? Natus, possimus corrupti? Veniam, assumenda incidunt illo reprehenderit voluptatibus accusamus fugit delectus optio saepe.</p>
+        <a href="#">Leer más</a>
+    </div>
+    <div class="caja">
+        <img src="./img/perro_adf93861_1412331876_230825124420_800x800.jpg" alt="Perro sanche">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil mollitia, error iure alias libero dicta vero, voluptas est, velit adipisci deserunt culpa reiciendis sit! Ex cum inventore a rem?</p>
+        <a href="#">Leer más</a>
+    </div>
+    <div class="caja">
+        <img src="./img/perro_adf93861_1412331876_230825124420_800x800.jpg" alt="Perro sanche">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam distinctio assumenda dolore nisi id esse deserunt quam eligendi magni! Quibusdam omnis totam obcaecati repellat magnam sed praesentium dignissimos quaerat tenetur.</p>
+        <a href="#">Leer más</a>
+    </div>
+</body>
+</html>

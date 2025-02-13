@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como crear un layout responsive</title>
+        <style>
+            body {
+                height: 100%;
+                font-family: 'lucida Sans';
+                font-size: 1.125rem;
+            }
+            html {
+                box-sizing: border-box;
+            }
+            /* Modificar el modelo de cajas de css */
+            *::before, *::after {
+                box-sizing: border-box;
+            }
+            /* Resetear margenes y padding */
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            img {
+                width: 50%;
+                max-width: 38%;
+                float: left;
+                margin-left: 0.48% /* 5px /1024.5px */;
+                margin-right: 1.65% /* 17px / 1024.5px */;
+                margin-bottom: 4px;
+            }
+            /* Estilos de la cabecera */
+            header {
+                background-color: #4587f1;
+                color: #fff;
+                font-size: 2rem;
+                text-align: center;
+                padding: 20px 0;
+                margin-bottom: 12px;
+            }
+            /* Rejilla flexible */
+            #container {
+                width: 100%;
+                max-width: 1366px;
+                padding: 12px 1.46% /* Rellenos laterales (20/1366*100) */;
+            }
+            /* Dividir contenido en columnas */
+
+            /* Lateral izquierdo */
+            #side {
+                width: 25% /* 1366 * 0.25 = 341.5 */;
+                float: left;
+            }
+            /* Menú de navegacion */
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            ul li {
+                background-color: #33b5e5;
+                color: white;
+                padding: 8px 3.51% /* 12px / 341.5 */;
+                margin-bottom: 8px;
+                box-shadow: 0 1px 1px #00001f;
+            }
+            ul li a {
+                text-decoration: none;
+                color: white;
+            }
+            ul li:hover {
+                background-color: #0099cc;
+            }
+            /* Contenido central */
+            #contenido-principal {
+                width: 75%; /* 1366 * 0.75 = 1.024,5 */
+                float: left;
+            }
+            h1 {
+                margin-bottom: 20px;
+            }
+            #contenido-principal p {
+                font-size: 0.93rem;
+                text-align: justify;
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+            /* Estilos del pie de página */
+            footer {
+                background-color: #555;
+                color: #fff;
+                font-size: 0.90rem;
+                text-align: center;
+                padding: 20px 0;
+            }
+            .clearfix {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            /* Aplicar los siguientes estilos cuando el area sea menor o igual a 600px */
+            @media screen and (max-width: 600px) {
+                #side #contenido-principal {
+                    width: 100%;
+                    padding: 0;
+                }
+                h1 {
+                    font-size: 1.45rem;
+                    margin-top: 12px;
+                }
+                #contenido-principal img {
+                    max-width: 100%;
+                    margin-bottom: 12px;
+                }
+            }
+            /* Aplicar los siguientes estilos cuando el area de visualizacion sea igual o mayor que 1366px */
+            @media screen and (min-width: 1366px) {
+                #container {
+                    margin: auto;
+                }
+            }
+        </style>
+<body>
+    <!-- Cabecera -->
+    <header id="cabecera">
+        <p>Logo</p>
+    </header>
+    <!-- Contenidos -->
+    <div id="container">
+        <!-- Lateral y menú de navegación -->
+
+        <nav id="side">
+            <ul id="menu">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Categorias</a></li>
+                <li><a href="">Acerca de</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal -->
+        <div id="contenido-principal">
+            <h1>10 lugares para hacer turismo interno</h1>
+            <img src="./img/varadero-playas.jpg" alt="Playa">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum mollitia culpa suscipit iure, officia quos ad corrupti laboriosam nostrum nam nulla cupiditate facilis. Numquam itaque saepe aperiam mollitia eos.</p>
+            <p>Illo voluptates sequi laudantium adipisci error corporis maxime tenetur eum. Cupiditate modi dignissimos recusandae, consequuntur amet reiciendis perspiciatis ex accusantium odio impedit? Et repellat dolores voluptate rem soluta voluptatibus excepturi.</p>
+            <p>Cumque numquam ea aliquam iste quia repellat omnis minima voluptatem non est doloremque nostrum culpa, voluptatum hic qui sit labore quo a vel similique voluptas! Sint cumque doloremque voluptates explicabo?</p>
+            <p>Eum quo esse quaerat. Veritatis quo tempora porro vitae et similique ratione nesciunt deserunt, repellendus eveniet eligendi minus culpa numquam unde? In fugiat unde, est magnam amet veritatis cumque aut?</p>
+            <p>Magnam quidem ad dignissimos, labore sit vel. Quae vel ab deserunt tempore inventore. Minima suscipit tenetur excepturi asperiores, exercitationem eius, consectetur dolorem at, ea quaerat similique sit architecto cumque molestias?</p>
+            <p>Officiis harum culpa consectetur deserunt omnis necessitatibus, laudantium praesentium. Porro iusto laboriosam reprehenderit tempora facere maxime nulla suscipit, perferendis ullam distinctio harum dolor veniam magni, doloremque fuga illum sapiente esse?</p>
+            <p>Temporibus ea adipisci doloremque? Quas error accusamus eligendi perferendis, consequuntur nulla non provident adipisci! Possimus nesciunt dolor maiores ipsa, placeat culpa corrupti voluptatem vitae laboriosam doloremque necessitatibus! Enim, provident labore!</p>
+            <p>Dolore repudiandae recusandae quibusdam architecto. Tempore sint ducimus sit facere quos earum illo deserunt esse velit. Fuga blanditiis eveniet iusto natus, perferendis corporis reiciendis nobis aperiam assumenda in. Sapiente, explicabo.</p>
+            <p>Temporibus laboriosam nemo, animi, quaerat tempora numquam eius vel deserunt tempore facilis et quidem tenetur doloremque explicabo autem esse libero repellendus repellat id fugit nihil suscipit. Nemo perspiciatis hic tempore.</p>
+            <p>Et ipsam, consequuntur, voluptates odit excepturi labore ad quam alias ea, modi fugiat vel aliquid perspiciatis molestias cumque minima totam doloribus eveniet quos optio natus! Voluptatum in ipsum fuga minima!</p>
+        </div>
+        <!-- Fin del contenido principal -->
+
+    </div>
+
+    <!-- Pie de página -->
+
+    <footer id="piepagina" class="clearfix">
+        <small>Derechos reservados</small>
+    </footer>
+</body>
+</html>

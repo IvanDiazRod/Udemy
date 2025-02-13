@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacidad y transparencia</title>
+    <style>
+        body {
+            height: 100%;
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        img {
+            width: 33%;
+            height: auto;
+        }
+        #imagen1 {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        #imagen2 {
+            opacity: 0.4;
+            filter: alpha(opacity=100);
+        }
+        #imagen3 {
+            opacity: 0.1;
+            filter: alpha(opacity=100);
+        }
+        #imagen1:hover {
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+        }
+        #caja {
+            background-color: rgba(255, 165, 0, 0.45);
+            margin-top: 40px;
+            margin-bottom: 10px;
+            padding: 50px;
+            width: 600px;
+            filter: alpha(opacity=45);
+        }
+    </style>
+</head>
+<body>
+    <img id="imagen1" src="./img/Barbados_beach.jpg" alt="">
+    <img id="imagen2" src="./img/1.playas-de-Tulum.jpg" alt="">
+    <img id="imagen3" src="./img/varadero-playas.jpg" alt="">
+
+    <div id="caja">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nostrum temporibus, quasi molestiae pariatur numquam totam, quas necessitatibus maxime odio earum iure dicta saepe corporis sapiente ab tempore officiis nobis.
+    </div>
+</body>
+</html>

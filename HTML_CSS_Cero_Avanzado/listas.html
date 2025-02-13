@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones CSS</title>
+        <style>
+            body {
+                height: 100%;
+                font-family: arial, sans-serif;
+                font-size: 1.125rem;
+            }
+            /* Como aplicar estilos a las listas */
+            ul {
+                list-style-type: square;
+            }
+            ol {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            #lista-imagen {
+                list-style:url("./img/checkmark.png") inside;
+            }
+            #lista-posicion {
+                list-style-position: inside;
+            }
+            /* Como crear un menú vertical */
+            #menu-vertical {
+                background-color: rgba(168, 168, 168, 0.508);
+                list-style: none;
+                padding: 0 1px;
+                width: 50%;
+            }
+            #menu-vertical li {
+                border: 1px solid black;
+            }
+            #menu-vertical li a {
+                text-decoration: none;
+                color: #000;
+                display: block;
+                padding: 12px;
+            }
+            #menu-vertical li a:hover {
+                background-color: #ccc;
+            }
+            #menu-vertical li a.actual {
+                background-color: rgb(0, 149, 255);
+                color: #fff;
+            }
+            /* Como crear un menú horizontal */
+            header ul{
+                background-color: #333;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            header ul li {
+                float: left;
+            }
+            header ul li a {
+                text-decoration: none;
+                display: block;
+                color: #fff;
+                text-align: center;
+                padding: 14px 16px;
+            }
+            header ul li a:hover {
+                background-color: #111;
+            }
+            header ul li a.active {
+                background-color: #cccc4eaf;
+            }
+        </style>
+<body>
+    <header>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Acerca de</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a class="active" href="">Contacto</a></li>
+        </ul>
+    </header>
+    <h1>Como aplicar estilos a las listas de HTML</h1>
+    <h2>Listas desordenadas</h2>
+    <ul>
+        <li>Ensaladas</li>
+        <li>Pescados y mariscos</li>
+        <li>Carnes y aves</li>
+    </ul>
+    <h2>Listas ordenadas</h2>
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ol>
+    <h2>Lista con imagenes</h2>
+    <ul id="lista-imagen">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <h2>Controlar la identacion de elementos sobre la lista</h2>
+    <ul id="lista-posicion">
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti asperiores quod quae adipisci explicabo dignissimos modi quis veritatis ut soluta animi quam placeat distinctio, dolorem repellendus? Nisi vel placeat nobis!</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas excepturi quis facilis magnam tempora quia quasi iste blanditiis provident, quisquam neque molestiae fuga sint officia libero veniam repellendus perspiciatis totam.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolor modi iste quod mollitia possimus ipsam dolores eos qui, velit, fuga error fugit nostrum saepe. Deleniti doloribus a corporis veritatis?</li>
+    </ul>
+    <h2>Menú vertical</h2>
+    <ul id="menu-vertical">
+        <li><a href="">Inicio</a></li>
+        <li><a class="actual" href="">Acerca de</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Contacto</a></li>
+    </ul>
+</body>
+</html>

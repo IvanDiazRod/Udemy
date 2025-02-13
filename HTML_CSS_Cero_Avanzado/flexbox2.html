@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox2</title>
+        <style>
+            body {
+                height: 100%;
+                font-family: 'lucida Sans';
+                font-size: 1.125rem;
+            }
+            .caja-flexible {
+                background-color: #069e27;
+                display: flex;
+            }
+            .caja-flexible > div {
+                background-color: #f1f1f1;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 80px;
+                font-size: 3rem;
+            }
+            /* Flex-grow */
+            .grow > div:nth-child(2) {
+                flex-grow: 1;
+            }
+            .grow > div:nth-child(3) {
+                flex-grow: 2;
+            }
+            .grow > div:nth-child(5) {
+                flex-grow: 3;
+            }
+            /* flex-shrink */
+            .shrink {
+                width: 900px;
+            }
+            .shrink > div:nth-child(4) {
+                flex-shrink: 0;
+            }
+            /* flex-basis */
+            .basis > div:nth-child(3) {
+                flex-basis: 300px;
+            }
+            /* flex */
+            .flex > div:nth-child(2) {
+                flex: 0 10 400px;
+            }
+            .align-self {
+                height: 400px;
+            }
+            .align-self > div:nth-child(1) {
+                align-self: flex-start;
+            }
+            .align-self > div:nth-child(2) {
+                align-self: flex-end;
+            }
+            .align-self > div:nth-child(3) {
+                align-self: center;
+            }
+            .align-self > div:nth-child(4) {
+                align-self: baseline;
+            }
+            .align-self > div:nth-child(5) {
+                align-self: stretch;
+            }
+            /* order */
+            .order > div:nth-child(1){
+                order: 2;
+            }
+            .order > div:nth-child(2){
+                order: 1;
+            }
+            .order > div:nth-child(3){
+                order: 4;
+            }
+            .order > div:nth-child(4){
+                order: 5;
+            }
+            .order > div:nth-child(5){
+                order: 3;
+            }
+        </style>
+<body>
+    <h1>Flexbox</h1>
+    <h2>Propiedad flex-grow</h2>
+        <div class="caja-flexible grow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h2>Propiedad flex-shrink</h2>
+        <div class="caja-flexible shrink">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <h2>Propiedad flex-basis</h2>
+    <div class="caja-flexible basis">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+    <h2>Propiedad flex</h2>
+    <div class="caja-flexible flex">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    </div>
+    <h2>Propiedad align-self</h2>
+    <div class="caja-flexible align-self">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div style="font-size: 1.5rem;">4</div>
+    <div>5</div>
+    </div>
+    <h2>Propiedad order</h2>
+    <div class="caja-flexible order">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    </div>
+</body>
+</html>

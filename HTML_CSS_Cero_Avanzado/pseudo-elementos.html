@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de pseudo elementos</title>
+    <style>
+        /* first-letter */
+        #primeraletra::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+        /* firstname */
+        #primeralinea::first-line {
+            color: blue;
+        }
+        /* Before y after */
+        .error::before {
+            content: url(./img/warning-24841_1280.png);
+            vertical-align: middle;
+            padding-right: 3px;
+        }
+        .error span::after {
+            content: "ATENCIÓN!!:";
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos-CSS</h1>
+    <p id="primeraletra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officia aliquam, possimus ad autem perspiciatis fugiat cum magni sunt ea saepe dolorem beatae. Quam ut molestiae vero minus officiis nihil.</p>
+    <p id="primeralinea">Neque qui quis aperiam aliquam vero iure accusamus minus voluptatem consequatur unde dolores corporis expedita quisquam reprehenderit optio necessitatibus ut quaerat rerum blanditiis, culpa molestiae fuga? Saepe aspernatur autem similique!</p>
+    <p class="error"><span></span> Expedita itaque eveniet minus. Repellendus necessitatibus, ullam dolor perspiciatis eius dolore tempora voluptate? Nisi, aspernatur atque blanditiis explicabo dolore quo doloremque. Quae recusandae cum, minus quas officia sequi odit rerum!</p>
+    <p>Omnis tenetur laborum, consequatur labore quas quasi repellendus! Eligendi velit voluptas, architecto error autem minima odio nesciunt, molestiae ipsa neque eveniet, fugiat aliquam eos dignissimos sapiente rem dolore omnis. Corporis?</p>
+    <p class="error"><span></span> Obcaecati ut itaque cumque dignissimos ducimus, expedita iusto. Ea, perferendis temporibus magnam quia tempora, consectetur labore cum atque vero eos nesciunt at voluptatibus aliquid natus architecto quaerat officia possimus harum.</p>
+</body>
+</html>

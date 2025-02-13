@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar eleemntos con CSS</title>
+        <style>
+            body {
+                height: 100%;
+                font-family: arial, sans-serif;
+                font-size: 1.125rem;
+            }
+            /* Como trasladar elementos */
+            #trasladar {
+                background-color: #ffff00;
+                width: 330px;
+                height: 200px;
+                border: 1px solid black;
+                padding: 20px 30px;
+                margin: 20px 200px;
+                transform: translate(500px);
+            }
+            /* Como escalar elementos */
+            #escalar {
+                background-color: #008000;
+                width: 400px;
+                height: 200px;
+                border: 1px solid black;
+                color: #fff;
+                padding: 12px;
+                margin: 90px;
+                transform: scale(2, 0.90);
+            }
+            /* Como segar elementos */
+            #segar {
+                background-color: #002980;
+                width: 500px;
+                height: 200px;
+                margin: 90px;
+                transform: skew(20deg, 16deg);
+            }
+            /* Como rotar elementos */
+            #rotate {
+                background-color: #00ffff;
+                width: 200px;
+                height: 250px;
+                padding: 12px;
+                margin: 90px;
+                transform: rotate(-45deg) translate(200px, 250px) skew(10deg, 10deg);
+                transition: 0.2s ease;
+            }
+            #rotate:hover {
+                transform: skew(5deg, 4deg);
+                border: 2px solid rgb(37, 84, 84);
+            }
+            /* Como modificar el punto de origen */
+            #punto-origen {
+                background-color: orange;
+                width: 500px;
+                height: 500px;
+                margin: 30px auto 90px;
+                transition: transform 3s ease-in 1s;
+                transform-origin: 45% 90%;
+            }
+            #punto-origen:hover {
+                transform: rotate(360deg);
+                transition: transform 3s ease-in 1s;
+            }
+            /* Como crear efecto de profundidad */
+            #contenedor {
+                width: 400px;
+                height: 490px;
+                border: 1px solid black;
+                padding: 50px;
+                margin: 30px auto;
+                perspective: 200px;
+            }
+            #contenedor #elemento {
+                background-color: #ffff00;
+                width: 150px;
+                height: 150px;
+                padding: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+                text-align: center;
+                transform: rotate3d(-1, 1, 1, 36deg);
+            }
+        </style>
+<body>
+    <h1>Propiedad transform</h1>
+    <h2>Funcion translate</h2>
+    <div id="trasladar">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque harum beatae totam modi veniam corrupti consequuntur dolorem magni unde suscipit? Sunt vel nam corrupti! Voluptatum iste nihil nam ut et?</div>
+
+    <h2>Funcion scale()</h2>
+    <div id="escalar">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo perspiciatis quis nemo dolorem mollitia non provident molestiae officiis deserunt. Eum earum explicabo quidem tempora placeat veritatis nulla voluptatibus possimus esse.
+    </div>
+
+    <h2>Funcion skew</h2>
+    <div id="segar">
+        
+    </div>
+
+    <h2>Funcion rotate</h2>
+    <div id="rotate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam tempore vitae dicta sunt cumque ullam quae enim! Repellat, porro veniam? Earum a ullam impedit culpa mollitia necessitatibus obcaecati quidem illum?</div>
+
+    <h2>Propiedad transform-origin</h2>
+    <div id="punto-origen"></div>
+
+    <h2>Transformaciones 3d</h2>
+    <div id="contenedor">
+        <div id="elemento">3d</div>
+    </div>
+</body>
+</html>

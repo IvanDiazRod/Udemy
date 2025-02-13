@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como aplicar sombras en CSS</title>
+    <style>
+        body {
+            height: 100%;
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        #sombra-simple {
+            background-color: orange;
+            width: 600px;
+            height: 150px;
+            padding: 12px;
+            box-shadow: 12px 10px 5px 4px #ccc;
+            border-radius: 30px;
+        }
+        /* Como crear un efecto de sombras multiples */
+        #sombras-multiples {
+            border: 1px solid black;
+            width: 600px;
+            height: 340px;
+            margin-top: 20px;
+            margin-left: 18px;
+            margin-bottom: 40px;
+            box-shadow: -8px 1px 10px #001011, 5px -3px 15px #dfe20a, 6px 5px 15px #2808da;
+        }
+        /* Como crear una sombra interna */
+        #sombra-interior {
+            background-color: #ffd700;
+            width: 600px;
+            height: 144px;
+            margin: 20px;
+            padding: 12px;
+            box-shadow: 9px 2px 20px 3px #5f9ea0 inset;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como crear sombras en CSS</h1>
+    <div id="sombra-simple">
+
+    </div>
+
+    <div id="sombras-multiples">
+
+    </div>
+
+    <div id="sombra-interior">
+
+    </div>
+</body>
+</html>

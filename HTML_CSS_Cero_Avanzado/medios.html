@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como aplicarmedia queries</title>
+        <style>
+            body {
+                height: 100%;
+                font-family: arial, sans-serif;
+                font-size: 1.125rem;
+            }
+            img {
+                width: 30%;
+                height: auto;
+                float: left;
+                margin: 0.3em 0.9em 0.3em 0;
+            }
+            /* Media queries */
+            @media print {
+                body {
+                    color: blue;
+                }
+                img {
+                    display: none;
+                }
+            }
+            @media screen and (min-width: 501px) and (max-width: 992px), (min-width: 1100px) and (max-width: 1200px) {
+                body {
+                    background-color: #e0e0e0;
+                }
+                div {
+                    margin: 0 0.90em;
+                }
+                img {
+                    width: 45%;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 1.09rem;
+                }
+            }
+            @media not screen and (max-width: 500px) and (orientation: landscape) {
+                div {
+                    margin: 0px 0.95em;
+                }
+                img {
+                    width: 100%;
+                    margin-bottom: 0.95em;
+                }
+                h1 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 0.95rem;
+                    line-height: 1.5;
+                    text-align: justify;
+                }
+            }
+        </style>
+<body>
+    <div>
+        <h1>Consejos para adiestrar tu perro</h1>
+        <img src="./img/perro.jpg" alt="Imagen de un perro fachero">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit totam quibusdam veritatis consectetur vitae ex, incidunt quia rerum ipsum doloremque iure? Voluptatibus quis itaque sit odit, earum laudantium delectus nemo.</p>
+        <p>Voluptates perferendis quibusdam repellendus minima, veritatis voluptatum perspiciatis voluptas numquam nobis ratione velit doloremque, deserunt non omnis eius quos. Aut quibusdam, pariatur nemo impedit neque minus eius adipisci sequi fugit.</p>
+        <p>Architecto adipisci nobis magni velit ipsam mollitia esse excepturi repellat laudantium accusantium tempore suscipit iusto, illum sunt? Numquam ducimus pariatur neque cupiditate repudiandae, alias non autem ratione natus animi vel.</p>
+        <p>Officia, beatae. Culpa quibusdam, eos ad sed nobis quisquam rerum repudiandae molestiae quo iste sapiente nesciunt sunt impedit explicabo dolores quam deleniti, consequatur tempora assumenda et labore dicta veniam. Aspernatur.</p>
+        <p>Ullam deserunt harum ipsa quis dolorum delectus voluptates natus voluptate ratione minus, soluta quam nostrum aut eius iure accusamus illum iusto. Beatae esse corporis magni velit minima asperiores, iure in?</p>
+    </div>
+</body>
+</html>

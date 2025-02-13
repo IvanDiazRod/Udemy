@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-seectores</title>
+        <style>
+            body {
+                height: 100%;
+                font-family: arial, sans-serif;
+                font-size: 1.125rem;
+            }
+            /* Como aplicar una transicion */
+            div {
+                background-color: green;
+                width: 200px;
+                height: 200px;
+                margin: 90px auto;
+                transition-property: width, height, background-color, box-shadow;
+                transition-duration: 1.5s;
+                transition-timing-function: ease-in;
+                transition-delay: 3s;
+                transition: 0.5s ease;
+            }
+            div:hover {
+                background-color: #ffff00;
+                width: 500px;
+                height: 300px;
+                box-shadow: 2px 5px 5px #ccc;
+                transition-property: width, height, background-color, box-shadow;
+                transition-duration: 1.5s;
+                transition-timing-function: ease-in;
+                transition-delay: 3s;
+                transition: all 1.5s ease-in 3s;
+            }
+        </style>
+<body>
+    <div></div>
+</body>
+</html>
